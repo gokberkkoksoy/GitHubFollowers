@@ -20,6 +20,7 @@
 		5EE5DF5D264976E5001F20CF /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF5C264976E5001F20CF /* GFBodyLabel.swift */; };
 		5EE5DF5F26497BA3001F20CF /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF5E26497BA3001F20CF /* GFAlertVC.swift */; };
 		5EE5DF6126498D0D001F20CF /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF6026498D0D001F20CF /* UIViewController+Ext.swift */; };
+		5EE5DF6726499758001F20CF /* GFAlertContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF6626499758001F20CF /* GFAlertContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5EE5DF5C264976E5001F20CF /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		5EE5DF5E26497BA3001F20CF /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		5EE5DF6026498D0D001F20CF /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		5EE5DF6626499758001F20CF /* GFAlertContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				5EE5DF5A264974BC001F20CF /* GFTitleLabel.swift */,
 				5EE5DF5C264976E5001F20CF /* GFBodyLabel.swift */,
 				5EE5DF5E26497BA3001F20CF /* GFAlertVC.swift */,
+				5EE5DF6626499758001F20CF /* GFAlertContainer.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				5EE5DF5D264976E5001F20CF /* GFBodyLabel.swift in Sources */,
 				5EE5DF5B264974BC001F20CF /* GFTitleLabel.swift in Sources */,
 				5EE5DF5926483939001F20CF /* FollowerListVC.swift in Sources */,
+				5EE5DF6726499758001F20CF /* GFAlertContainer.swift in Sources */,
 				5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */,
 				5EE5DF3F26455E00001F20CF /* SceneDelegate.swift in Sources */,
 			);
