@@ -14,6 +14,7 @@ class SearchVC: UIViewController {
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
     
     var isUsernameEntered: Bool { return !usernameTextField.text!.isEmpty }
+    
     override func viewDidLoad() {  // called only once
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

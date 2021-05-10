@@ -18,7 +18,7 @@ class GFButton: UIButton {
     }
     
     init(backgroundColor: UIColor, title: String) {
-        super.init(frame: .zero)
+        super.init(frame: .zero) // set frame as zero (we set size with anchors we dont need that)
         self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
         configure()
