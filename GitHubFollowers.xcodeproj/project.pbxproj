@@ -27,6 +27,7 @@
 		5EE5DF72264B3B61001F20CF /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */; };
 		5EE5DF75264C04A9001F20CF /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF74264C04A9001F20CF /* FollowerCell.swift */; };
 		5EE5DF77264C0549001F20CF /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */; };
+		5EE5DF79264D70BB001F20CF /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF78264D70BB001F20CF /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		5EE5DF74264C04A9001F20CF /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		5EE5DF78264D70BB001F20CF /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */,
+				5EE5DF78264D70BB001F20CF /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				5EE5DF5926483939001F20CF /* FollowerListVC.swift in Sources */,
 				5EE5DF6726499758001F20CF /* GFAlertContainer.swift in Sources */,
 				5EE5DF72264B3B61001F20CF /* ErrorMessage.swift in Sources */,
+				5EE5DF79264D70BB001F20CF /* UIHelper.swift in Sources */,
 				5EE5DF6F2649B4B2001F20CF /* NetworkManager.swift in Sources */,
 				5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */,
 				5EE5DF3F26455E00001F20CF /* SceneDelegate.swift in Sources */,
