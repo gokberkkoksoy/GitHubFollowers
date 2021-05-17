@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E8544722652C22800B725CB /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8544712652C22800B725CB /* GFError.swift */; };
 		5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */; };
 		5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA892651F34E00A88519 /* UserInfoVC.swift */; };
 		5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF3C26455E00001F20CF /* AppDelegate.swift */; };
@@ -26,13 +27,13 @@
 		5EE5DF6A26499B78001F20CF /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF6926499B78001F20CF /* Follower.swift */; };
 		5EE5DF6C26499BA4001F20CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF6B26499BA4001F20CF /* User.swift */; };
 		5EE5DF6F2649B4B2001F20CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF6E2649B4B2001F20CF /* NetworkManager.swift */; };
-		5EE5DF72264B3B61001F20CF /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */; };
 		5EE5DF75264C04A9001F20CF /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF74264C04A9001F20CF /* FollowerCell.swift */; };
 		5EE5DF77264C0549001F20CF /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */; };
 		5EE5DF79264D70BB001F20CF /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF78264D70BB001F20CF /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E8544712652C22800B725CB /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		5ED6AA892651F34E00A88519 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		5EE5DF3926455E00001F20CF /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +55,6 @@
 		5EE5DF6926499B78001F20CF /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		5EE5DF6B26499BA4001F20CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5EE5DF6E2649B4B2001F20CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		5EE5DF74264C04A9001F20CF /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		5EE5DF78264D70BB001F20CF /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 		5EE5DF70264B3B4E001F20CF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5EE5DF71264B3B60001F20CF /* ErrorMessage.swift */,
 				5EE5DF78264D70BB001F20CF /* UIHelper.swift */,
+				5E8544712652C22800B725CB /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -299,6 +299,7 @@
 				5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */,
 				5EE5DF5F26497BA3001F20CF /* GFAlertVC.swift in Sources */,
 				5EE5DF6C26499BA4001F20CF /* User.swift in Sources */,
+				5E8544722652C22800B725CB /* GFError.swift in Sources */,
 				5EE5DF75264C04A9001F20CF /* FollowerCell.swift in Sources */,
 				5EE5DF77264C0549001F20CF /* GFAvatarImageView.swift in Sources */,
 				5EE5DF5D264976E5001F20CF /* GFBodyLabel.swift in Sources */,
@@ -307,7 +308,6 @@
 				5EE5DF5B264974BC001F20CF /* GFTitleLabel.swift in Sources */,
 				5EE5DF5926483939001F20CF /* FollowerListVC.swift in Sources */,
 				5EE5DF6726499758001F20CF /* GFAlertContainer.swift in Sources */,
-				5EE5DF72264B3B61001F20CF /* ErrorMessage.swift in Sources */,
 				5EE5DF79264D70BB001F20CF /* UIHelper.swift in Sources */,
 				5EE5DF6F2649B4B2001F20CF /* NetworkManager.swift in Sources */,
 				5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */,
