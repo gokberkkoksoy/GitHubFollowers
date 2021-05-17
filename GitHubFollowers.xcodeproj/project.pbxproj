@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */; };
+		5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA892651F34E00A88519 /* UserInfoVC.swift */; };
 		5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF3C26455E00001F20CF /* AppDelegate.swift */; };
 		5EE5DF3F26455E00001F20CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF3E26455E00001F20CF /* SceneDelegate.swift */; };
 		5EE5DF4626455E02001F20CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE5DF4526455E02001F20CF /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		5ED6AA892651F34E00A88519 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		5EE5DF3926455E00001F20CF /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE5DF3C26455E00001F20CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE5DF3E26455E00001F20CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				5EE5DF5026456A7C001F20CF /* SearchVC.swift */,
 				5EE5DF5226456AA1001F20CF /* FavoritesListVC.swift */,
 				5EE5DF5826483939001F20CF /* FollowerListVC.swift */,
+				5ED6AA892651F34E00A88519 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				5EE5DF75264C04A9001F20CF /* FollowerCell.swift in Sources */,
 				5EE5DF77264C0549001F20CF /* GFAvatarImageView.swift in Sources */,
 				5EE5DF5D264976E5001F20CF /* GFBodyLabel.swift in Sources */,
+				5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */,
 				5EE5DF6A26499B78001F20CF /* Follower.swift in Sources */,
 				5EE5DF5B264974BC001F20CF /* GFTitleLabel.swift in Sources */,
 				5EE5DF5926483939001F20CF /* FollowerListVC.swift in Sources */,
