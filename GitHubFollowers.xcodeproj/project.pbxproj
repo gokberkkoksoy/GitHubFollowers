@@ -13,6 +13,7 @@
 		5EA72777265599B800A2E9F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA72776265599B800A2E9F0 /* Constants.swift */; };
 		5EA727792655C9AF00A2E9F0 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA727782655C9AF00A2E9F0 /* GFItemInfoView.swift */; };
 		5EA7277B2655CF8C00A2E9F0 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7277A2655CF8C00A2E9F0 /* GFItemInfoVC.swift */; };
+		5EA7277D2655D39F00A2E9F0 /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7277C2655D39F00A2E9F0 /* GFRepoItemVC.swift */; };
 		5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */; };
 		5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA892651F34E00A88519 /* UserInfoVC.swift */; };
 		5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF3C26455E00001F20CF /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		5EA72776265599B800A2E9F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5EA727782655C9AF00A2E9F0 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		5EA7277A2655CF8C00A2E9F0 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
+		5EA7277C2655D39F00A2E9F0 /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
 		5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		5ED6AA892651F34E00A88519 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		5EE5DF3926455E00001F20CF /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				5EE5DF5E26497BA3001F20CF /* GFAlertVC.swift */,
 				5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */,
 				5EA7277A2655CF8C00A2E9F0 /* GFItemInfoVC.swift */,
+				5EA7277C2655D39F00A2E9F0 /* GFRepoItemVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				5EE5DF6C26499BA4001F20CF /* User.swift in Sources */,
 				5E8544722652C22800B725CB /* GFError.swift in Sources */,
 				5EE5DF75264C04A9001F20CF /* FollowerCell.swift in Sources */,
+				5EA7277D2655D39F00A2E9F0 /* GFRepoItemVC.swift in Sources */,
 				5EE5DF77264C0549001F20CF /* GFAvatarImageView.swift in Sources */,
 				5EE5DF5D264976E5001F20CF /* GFBodyLabel.swift in Sources */,
 				5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */,
