@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5E8544722652C22800B725CB /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8544712652C22800B725CB /* GFError.swift */; };
+		5EA7277326558CB800A2E9F0 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */; };
+		5EA727752655915400A2E9F0 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA727742655915400A2E9F0 /* GFSecondaryTitleLabel.swift */; };
+		5EA72777265599B800A2E9F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA72776265599B800A2E9F0 /* Constants.swift */; };
 		5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */; };
 		5ED6AA8A2651F34E00A88519 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AA892651F34E00A88519 /* UserInfoVC.swift */; };
 		5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5DF3C26455E00001F20CF /* AppDelegate.swift */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		5E8544712652C22800B725CB /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
+		5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		5EA727742655915400A2E9F0 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		5EA72776265599B800A2E9F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		5ED6AA892651F34E00A88519 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		5EE5DF3926455E00001F20CF /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5EE5DF5E26497BA3001F20CF /* GFAlertVC.swift */,
+				5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 			children = (
 				5EE5DF5A264974BC001F20CF /* GFTitleLabel.swift */,
 				5EE5DF5C264976E5001F20CF /* GFBodyLabel.swift */,
+				5EA727742655915400A2E9F0 /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 			children = (
 				5EE5DF78264D70BB001F20CF /* UIHelper.swift */,
 				5E8544712652C22800B725CB /* GFError.swift */,
+				5EA72776265599B800A2E9F0 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -294,9 +303,11 @@
 				5EE5DF572646E23F001F20CF /* GFTextField.swift in Sources */,
 				5EE5DF5326456AA1001F20CF /* FavoritesListVC.swift in Sources */,
 				5EE5DF552646D21D001F20CF /* GFButton.swift in Sources */,
+				5EA7277326558CB800A2E9F0 /* GFUserInfoHeaderVC.swift in Sources */,
 				5EE5DF6126498D0D001F20CF /* UIViewController+Ext.swift in Sources */,
 				5EE5DF5126456A7C001F20CF /* SearchVC.swift in Sources */,
 				5ED6AA832651A83A00A88519 /* GFEmptyStateView.swift in Sources */,
+				5EA727752655915400A2E9F0 /* GFSecondaryTitleLabel.swift in Sources */,
 				5EE5DF5F26497BA3001F20CF /* GFAlertVC.swift in Sources */,
 				5EE5DF6C26499BA4001F20CF /* User.swift in Sources */,
 				5E8544722652C22800B725CB /* GFError.swift in Sources */,
@@ -312,6 +323,7 @@
 				5EE5DF6F2649B4B2001F20CF /* NetworkManager.swift in Sources */,
 				5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */,
 				5EE5DF3F26455E00001F20CF /* SceneDelegate.swift in Sources */,
+				5EA72777265599B800A2E9F0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
