@@ -71,7 +71,7 @@ class FollowerListVC: UIViewController {
             self.dismissLoadingView()
             switch result {
             case.success(let followers):
-                if followers.count < 100 { self.hasMoreFollowers = false }
+                self.hasMoreFollowers = followers.count < 100 ? false : true
                 self.followers.append(contentsOf: followers)
                 if self.followers.isEmpty {
                     let message = "This user does not have any followers. Go follow them😄."
@@ -124,6 +124,7 @@ extension FollowerListVC: UICollectionViewDelegate {
         
         let destVC = UserInfoVC()
         destVC.username = follower.login
+        destVC.delegate = self
         let navController = UINavigationController(rootViewController: destVC)
         present(navController,animated: true)
     }
@@ -149,7 +150,13 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
 
 extension FollowerListVC: FollowerListVCDelegate {
     func didRequestFollowers(for username: String) {
-        
+        self.username = username
+        title = username
+        page = 1
+        followers.removeAll()
+        filteredFollowers.removeAll()
+        getFollowers(username: username, page: page)
+        collectionView.scrollsToTop = true
     }
     
     
