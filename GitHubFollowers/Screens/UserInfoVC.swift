@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: AnyObject {
+    func didTapGitHubProfile()
+    func didTapGetFollowers()
+}
+
 class UserInfoVC: UIViewController {
     
     let headerView = UIView()
@@ -37,18 +42,25 @@ class UserInfoVC: UIViewController {
             
             switch result {
             case .success(let user):
-                DispatchQueue.main.async {
-                    self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
-                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemView1)
-                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemView2)
-                    self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
-                }
+                DispatchQueue.main.async { self.configureUIElements(with: user) }
                 
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong.", message: error.rawValue, buttonTitle: "OK")
             }
         }
-
+    }
+    
+    func configureUIElements(with user: User) {
+        let repoItemVC = GFRepoItemVC(user: user)
+        repoItemVC.delegate = self
+        
+        let followerItemVC = GFFollowerItemVC(user: user)
+        followerItemVC.delegate = self
+        
+        add(childVC: repoItemVC, to: itemView1)
+        add(childVC: followerItemVC, to: itemView2)
+        add(childVC: GFUserInfoHeaderVC(user: user), to: headerView)
+        dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
     }
     
     func layoutUI() {
@@ -92,4 +104,15 @@ class UserInfoVC: UIViewController {
         dismiss(animated: true)
     }
     
+}
+
+extension UserInfoVC: UserInfoVCDelegate {
+    func didTapGitHubProfile() {
+        //show safariVC
+    }
+    
+    func didTapGetFollowers() {
+        // dismiss vc
+        // tell followerListVc the new user
+    }
 }
