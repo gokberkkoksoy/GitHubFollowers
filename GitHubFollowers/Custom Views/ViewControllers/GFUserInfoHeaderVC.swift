@@ -34,8 +34,8 @@ class GFUserInfoHeaderVC: UIViewController {
         configureUIElements()
     }
     
-    func configureUIElements() {
-        avatarImageView.getAvatarImage(from: user.avatarUrl)
+    private func configureUIElements() {
+        getAvatarImage()
         usernameLabel.text = user.login
         nameLabel.text = user.name ?? ""
         locationLabel.text = user.location ?? "No Location"
@@ -45,7 +45,14 @@ class GFUserInfoHeaderVC: UIViewController {
         locationImageView.image = UIImage(systemName: SFSymbols.location)
         locationImageView.tintColor = .secondaryLabel
     }
-    func addSubviews() {
+    
+    private func getAvatarImage() {
+        NetworkManager.shared.getAvatarImage(from: user.avatarUrl) { [weak self] image in
+            guard let self = self else { return }
+            DispatchQueue.main.async { self.avatarImageView.image = image }
+        }
+    }
+    private func addSubviews() {
         view.addSubview(avatarImageView)
         view.addSubview(usernameLabel)
         view.addSubview(nameLabel)
@@ -54,7 +61,7 @@ class GFUserInfoHeaderVC: UIViewController {
         view.addSubview(bioLabel)
     }
     
-    func layoutUI() {
+    private func layoutUI() {
         let padding: CGFloat = 20
         let textImagePadding: CGFloat = 12
         locationImageView.translatesAutoresizingMaskIntoConstraints = false
