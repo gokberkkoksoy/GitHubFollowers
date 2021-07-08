@@ -57,7 +57,6 @@ class FollowerListVC: GFDataLoadingVC {
     func configureSearchController() {
         let searchController = UISearchController()
         searchController.searchResultsUpdater = self
-        searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search for a username"
         searchController.obscuresBackgroundDuringPresentation = false // true -> faints the screen a little bit
         navigationItem.searchController = searchController
@@ -168,20 +167,17 @@ extension FollowerListVC: UICollectionViewDelegate {
     }
 }
 
-extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
+extension FollowerListVC: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else {
             filteredFollowers.removeAll()
             DispatchQueue.main.async { self.updateData(on: self.followers) }
+            isEditing = false
             return
         }
         filteredFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
         updateData(on: filteredFollowers)
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        updateData(on: followers)
     }
     
 }
