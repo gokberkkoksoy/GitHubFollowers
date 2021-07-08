@@ -52,14 +52,7 @@ class GFUserInfoHeaderVC: UIViewController {
             DispatchQueue.main.async { self.avatarImageView.image = image }
         }
     }
-    private func addSubviews() {
-        view.addSubview(avatarImageView)
-        view.addSubview(usernameLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(locationImageView)
-        view.addSubview(locationLabel)
-        view.addSubview(bioLabel)
-    }
+    private func addSubviews() { view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel) }
     
     private func layoutUI() {
         let padding: CGFloat = 20
@@ -97,6 +90,4 @@ class GFUserInfoHeaderVC: UIViewController {
             bioLabel.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
-    
-
 }
