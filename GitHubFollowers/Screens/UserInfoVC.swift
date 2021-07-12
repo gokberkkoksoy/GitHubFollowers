@@ -8,8 +8,7 @@
 import UIKit
 
 protocol UserInfoVCDelegate: AnyObject {
-    func didTapGitHubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+    func didRequestFollowers(for username: String)
 }
 
 class UserInfoVC: GFDataLoadingVC {
@@ -20,8 +19,8 @@ class UserInfoVC: GFDataLoadingVC {
     let dateLabel = GFBodyLabel(textAlignment: .center)
     var itemViews = [UIView]()
     var username: String!
-    weak var delegate: FollowerListVCDelegate!
-
+    weak var delegate: UserInfoVCDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,14 +51,8 @@ class UserInfoVC: GFDataLoadingVC {
     }
     
     func configureUIElements(with user: User) {
-        let repoItemVC = GFRepoItemVC(user: user)
-        repoItemVC.delegate = self
-        
-        let followerItemVC = GFFollowerItemVC(user: user)
-        followerItemVC.delegate = self
-        
-        add(childVC: repoItemVC, to: itemView1)
-        add(childVC: followerItemVC, to: itemView2)
+        add(childVC: GFRepoItemVC(user: user, delegate: self), to: itemView1)
+        add(childVC: GFFollowerItemVC(user: user, delegate: self), to: itemView2)
         add(childVC: GFUserInfoHeaderVC(user: user), to: headerView)
         dateLabel.text = "GitHub since \(user.createdAt.convertToMonthYearFormat())"
     }
@@ -107,7 +100,7 @@ class UserInfoVC: GFDataLoadingVC {
     
 }
 
-extension UserInfoVC: UserInfoVCDelegate {
+extension UserInfoVC: GFRepoItemVCDelegate {
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid.", buttonTitle: "OK")
@@ -115,7 +108,9 @@ extension UserInfoVC: UserInfoVCDelegate {
         }
         presentSafariVC(with: url)
     }
-    
+}
+
+extension UserInfoVC: GFFollowerItemVCDelegate {
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGFAlertOnMainThread(title: "No Followers", message: "This user has no followers. What a shame 😔.", buttonTitle: "So sad")
@@ -124,5 +119,4 @@ extension UserInfoVC: UserInfoVCDelegate {
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }
-    
 }
