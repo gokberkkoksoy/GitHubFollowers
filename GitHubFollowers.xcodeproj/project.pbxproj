@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E0038F42697254B008F4A9E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0038F32697254B008F4A9E /* UIView+Ext.swift */; };
+		5E0038F6269CADC0008F4A9E /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0038F5269CADBF008F4A9E /* UITableView+Ext.swift */; };
 		5E8544722652C22800B725CB /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8544712652C22800B725CB /* GFError.swift */; };
 		5EA7277326558CB800A2E9F0 /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */; };
 		5EA727752655915400A2E9F0 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA727742655915400A2E9F0 /* GFSecondaryTitleLabel.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		5E0038F32697254B008F4A9E /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5E0038F5269CADBF008F4A9E /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		5E8544712652C22800B725CB /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		5EA7277226558CB800A2E9F0 /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		5EA727742655915400A2E9F0 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				5EE5DF6026498D0D001F20CF /* UIViewController+Ext.swift */,
 				5EA727812656EDB200A2E9F0 /* Date+Ext.swift */,
 				5E0038F32697254B008F4A9E /* UIView+Ext.swift */,
+				5E0038F5269CADBF008F4A9E /* UITableView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				5EE5DF3D26455E00001F20CF /* AppDelegate.swift in Sources */,
 				5EA727792655C9AF00A2E9F0 /* GFItemInfoView.swift in Sources */,
 				5EE5DF3F26455E00001F20CF /* SceneDelegate.swift in Sources */,
+				5E0038F6269CADC0008F4A9E /* UITableView+Ext.swift in Sources */,
 				5EA72777265599B800A2E9F0 /* Constants.swift in Sources */,
 				5EA7278B265AF1C000A2E9F0 /* GFTabBarController.swift in Sources */,
 			);
