@@ -24,7 +24,6 @@ class GFFollowerItemVC: GFItemInfoVC {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureItems()
@@ -39,4 +38,5 @@ class GFFollowerItemVC: GFItemInfoVC {
     override func actionButtonTapped() {
         delegate.didTapGetFollowers(for: user)
     }
+    
 }

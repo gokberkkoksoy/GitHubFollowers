@@ -31,6 +31,7 @@ class UserInfoVC: GFDataLoadingVC {
         configureViewController()
         layoutUI()
         getUserInfo()
+        
     }
     
     func configureViewController() {

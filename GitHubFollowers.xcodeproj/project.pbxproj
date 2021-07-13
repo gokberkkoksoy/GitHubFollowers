@@ -99,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0038F7269DCA3E008F4A9E /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
 		5EA727802655D61F00A2E9F0 /* ItemInfoVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				5EE5DF6626499758001F20CF /* GFAlertContainer.swift */,
-				5EE5DF76264C0549001F20CF /* GFAvatarImageView.swift */,
 				5ED6AA822651A83A00A88519 /* GFEmptyStateView.swift */,
 				5EA727782655C9AF00A2E9F0 /* GFItemInfoView.swift */,
 			);
@@ -210,6 +217,7 @@
 		5EE5DF632649910E001F20CF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				5E0038F7269DCA3E008F4A9E /* ImageViews */,
 				5EA72789265AF1A100A2E9F0 /* TabBarControllers */,
 				5ED6AA882651A8B300A88519 /* Views */,
 				5ED6AA872651A89800A88519 /* TextFields */,

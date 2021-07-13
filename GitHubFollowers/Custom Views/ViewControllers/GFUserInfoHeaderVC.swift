@@ -29,13 +29,13 @@ class GFUserInfoHeaderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSubviews()
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel)
         layoutUI()
         configureUIElements()
     }
     
     private func configureUIElements() {
-        getAvatarImage()
+        avatarImageView.getImage(fromURL: user.avatarUrl)
         usernameLabel.text = user.login
         nameLabel.text = user.name ?? ""
         locationLabel.text = user.location ?? "No Location"
@@ -45,14 +45,6 @@ class GFUserInfoHeaderVC: UIViewController {
         locationImageView.image = SFSymbols.location
         locationImageView.tintColor = .secondaryLabel
     }
-    
-    private func getAvatarImage() {
-        NetworkManager.shared.getAvatarImage(from: user.avatarUrl) { [weak self] image in
-            guard let self = self else { return }
-            DispatchQueue.main.async { self.avatarImageView.image = image }
-        }
-    }
-    private func addSubviews() { view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel) }
     
     private func layoutUI() {
         let padding: CGFloat = 20
@@ -90,4 +82,5 @@ class GFUserInfoHeaderVC: UIViewController {
             bioLabel.heightAnchor.constraint(equalToConstant: 90)
         ])
     }
+    
 }
